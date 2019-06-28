@@ -1,0 +1,10 @@
+{
+    "url": "ldap://192.168.42.4:389",
+    "userattr":"sAMAccountName",
+    "userdn":"cn=Users,dc=arenz,dc=cloud",
+    "groupdn":"cn=Users,dc=arenz,dc=cloud",
+    "groupfilter":"(&(objectClass=group)(member:1.2.840.113556.1.4.1941:={{.UserDN}}))",
+    "binddn":"cn=vault-service,cn=Users,dc=arenz,dc=cloud",
+    "bindpass":"P@ssword1",
+    "groupattr":"memberOf"
+}

@@ -1,0 +1,9 @@
+{
+  "service": {
+    "name": "httpbin",
+    "port": 85,
+    "connect": {
+      "sidecar_service": {}
+    }
+  }
+}

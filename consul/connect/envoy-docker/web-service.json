@@ -1,0 +1,19 @@
+{
+  "service": {
+    "name": "web",
+    "tags": [
+      "httpbin"
+    ],
+    "port": 80,
+    "check": {
+      "args": [
+        "curl",
+        "localhost"
+      ],
+      "interval": "10s"
+    },
+    "connect": {
+      "sidecar_service": {}
+    }
+  }
+}
